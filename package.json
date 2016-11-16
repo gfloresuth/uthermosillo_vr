@@ -1,0 +1,30 @@
+{
+  "name": "uthermosillo_vr",
+  "version": "1.0.0",
+  "description": "UTHermosillo VR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express":"latest",
+    "body-parser":"latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfloresuth/uthermosillo_vr.git"
+  },
+  "keywords": [
+    "UTHermosillo",
+    "vr",
+    "nodejs",
+    "html5"
+  ],
+  "author": "Gustavo Adolfo Flores González (gflores@uthermosillo.edu.mx)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gfloresuth/uthermosillo_vr/issues"
+  },
+  "homepage": "https://github.com/gfloresuth/uthermosillo_vr#readme"
+}
