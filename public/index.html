@@ -9,15 +9,30 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="logo" src="images/logo2.jpg">
+        <img id="logo" src="./images/logo2.jpg">
       </a-assets>
+      <a-entity id="objCamera" position="0 0 5">
+        <a-camera look-controls-enabled="true">
+          <a-entity cursor="fuse: true; fuseTimeout: 100"
+          position="0 0 -5"
+          geometry="primitive: ring; radiusOuter: 0.30; radiusInner: 0.20;"
+          material="color: white; shader: flat">
+          </a-entity>          
+        </a-camera>
+      </a-entity>
       <!--<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" src="#logo"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>-->
       <a-plane position="0 2 -4" rotation="0 0 0" width="8" height="4" src="#logo"></a-plane>
-      <a-sphere position="0 0 -2" radius="0.25" color="#ffffff"></a-sphere>
-      <a-sphere position="0 3.5 -2" radius="0.25" color="#ffffff"></a-sphere>
-      <a-sky color="#000000"></a-sky>
+      <a-sphere cursor-listener position="0 0 -2" radius="0.25" color="#ffffff"></a-sphere>
+      <a-sphere cursor-listener position="0 3.5 -2" radius="0.25" color="#ffffff">
+        <a-animation begin="click" fill="forwards" repeat="1"
+        direction="alternate" attribute="position" from="0 3.5 -2"
+        to="15 .25 -2" dur="2000"></a-animation>        
+      </a-sphere>
+      <a-sky color="gray"></a-sky>
+
+
     </a-scene>
   </body>
 </html>
